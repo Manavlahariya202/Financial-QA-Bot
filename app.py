@@ -56,7 +56,7 @@ query = st.text_input("Ask a financial question:")
 
 if query and st.session_state.vector:
     # Initialize Llama2 model
-    llm = Ollama('deepseek-r1:1.5b ')
+    llm = Ollama('llama2')
 
     # Define the prompt template
     prompt_template = ChatPromptTemplate.from_template(
